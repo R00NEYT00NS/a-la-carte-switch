@@ -1,0 +1,22 @@
+[gd_scene load_steps=4 format=3 uid="uid://c744jul5jxhb7"]
+
+[ext_resource type="Texture2D" uid="uid://dh2ej05wpuqfw" path="res://icon.svg" id="1_ikcrt"]
+
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_ikigs"]
+blend_mode = 2
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_cdlxo"]
+size = Vector2(2069, 126)
+
+[node name="StaticBody2D" type="StaticBody2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+modulate = Color(0.486275, 0.372549, 0.811765, 1)
+material = SubResource("CanvasItemMaterial_ikigs")
+position = Vector2(1052, 133)
+scale = Vector2(16.1406, 1)
+texture = ExtResource("1_ikcrt")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(1050.5, 134)
+shape = SubResource("RectangleShape2D_cdlxo")
