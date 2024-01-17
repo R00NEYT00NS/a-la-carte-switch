@@ -10,10 +10,13 @@ func _physics_process(delta):
 	# Add the gravity.
 	velocity.y += gravity * delta
 	# Add constant speed
-	
+	velocity.x = speed
 		
-	if Input.is_action_just_pressed("ui_down"):
+	if Input.is_action_just_pressed("ui_accept"):
 		#change gravity
-		gravity = gravity * -1
+		gravity = -gravity
+		
+		#change character rotation
+		$".".scale.y = -$".".scale.y
 	
 	move_and_slide()
