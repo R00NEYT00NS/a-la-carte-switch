@@ -15,6 +15,6 @@ run/main_scene="res://play_space.tscn"
 config/features=PackedStringArray("4.1", "Forward Plus")
 config/icon="res://icon.svg"
 
-[display]
+[rendering]
 
-window/stretch/scale=0.5
+textures/canvas_textures/default_texture_filter=0
