@@ -22,20 +22,20 @@ func jump():
 		$".".scale.y = -$".".scale.y
 
 func _physics_process(delta):
-	
+
 	# Add the gravity.
 	velocity.y += gravity * delta
 	# Add constant speed
 	velocity.x = speed
-	
+
 	# Allows player to only jump when touching floor.
 	if is_on_floor():
 		jump()
-		
+
 	# Allows player to only jump when touching ceiling.		
 	if is_on_ceiling():
 		jump()
-	
+
 	move_and_slide()
 	update_animation()
 
